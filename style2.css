@@ -1,0 +1,130 @@
+*{
+    box-sizing:0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin:0;
+    box-sizing: border-box;
+    width: 450px;
+    height: 500px;
+    text-align: center;
+    border: 1px solid #dadce0;
+    border-radius: 6px;
+    position: absolute;
+}
+.container img{
+    margin-top: 48px;
+ }
+.content h1{
+    margin: 0;
+    color:#202124;
+    line-height: 50px;
+    font-size: 24px;  
+}
+.content p{
+    color:#202124;
+    line-height: 0.5px;
+}
+input{
+    padding: 20px;
+    width: 320px;
+    margin: 25px auto;
+    border-radius: 4px;
+    border:1px solid;
+    border-color:#dadce0;
+    outline: none;
+    background-color: transparent;
+
+}
+input:focus{
+    border: 2px solid #1a73e8;
+}
+label{
+    box-sizing: border-box;
+    right:200px;
+    color:#5f6368;
+    display: inline-block;
+    position: relative;
+    top: -65px;
+    right: 110px;
+    z-index:-1;
+    transition: 0.1s;
+  
+}
+.inputbox input:focus~label,
+.inputbox input:valid~label{
+    color: red;
+    top: -95px;
+    right:123px;
+    z-index:1;
+    background-color:white;
+    font-size: 13px;
+    color:#1a73e8;
+    font-weight:bold;
+    padding: 1px 5px;
+   
+}
+.forgot{
+  position: relative;
+  top:-37px;
+  right:135px;
+}
+.forgot a{
+    color: #1a73e8;
+    font-size: inherit;
+    font-size: 15px;
+    text-decoration: none;
+}
+.below p{
+    font-size: 14px;
+    color:#5f6368;
+    font-family:'Noto Sans Myanmar UI',arial,sans-serif;
+}
+.below a{
+    right:120px;
+    color: #1a73e8;
+    text-decoration: none;
+    position: relative;
+    right: 144px;
+    top: 3px;
+    font-family:'Noto Sans Myanmar UI',arial,sans-serif;
+
+}
+.bottom a{
+    right:120px;
+    color: #1a73e8;
+    text-decoration: none;
+    position: relative;
+    right: 90px;
+    top: 3px;
+    font-family:"Google Sans",Roboto,Arial,sans-serif;
+    font-size: 15px;
+    position: relative;
+    top: 22px;
+}
+button{
+    position: relative;
+    padding: 10px 25px;
+    top: 25px;
+    left: 90px;
+    color: white;
+    font-weight: bold;
+    background-color: #1a73e8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #286ac2; 
+}
+
